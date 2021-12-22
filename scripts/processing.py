@@ -68,7 +68,7 @@ def wide_clusters(img, sigma, pixel_density, min_samples,plot = True):
     #footprint needs to be an int, so converting into int and calculating footprint here
     min_distance = 2.5 * pixel_density
     size = int(2 * min_distance + 1)
-    print(size)
+    #print(size)
     footprint = np.ones((size, ) * img.ndim, dtype=bool)
 
     is_peak = feature.peak_local_max(gauss, min_distance = min_distance, threshold_abs=thresh +   

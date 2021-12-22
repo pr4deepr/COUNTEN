@@ -43,7 +43,8 @@ def _binarization(image):
 def _binarize(image):
     subsampled_image = subsample(image)
     thresh = filters.threshold_otsu(subsampled_image)
-    binary = binarize(image, thresh)
+    #have to define threshold= parameter
+    binary = binarize(image, threshold=thresh)
     binary = dilation(binary, disk(10))
     return (binary)
 

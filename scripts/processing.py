@@ -145,9 +145,9 @@ def segmentation(img, local_maxi, labels, meta, directory, plot=True, save=False
                 if save:
                     try:
                         filename = meta['Name']+str(i+1)+'.tif'
-                        plt.savefig(directory+'/'+filename, transparent=True,bbox_inches='tight')
+                        plt.savefig(directory+'/'+filename, transparent=True,bbox_inches='tight',pad_inches = 0)
                     except IOError:
-                        plt.savefig(filename, transparent=True,bbox_inches='tight')
+                        plt.savefig(filename, transparent=True,bbox_inches='tight',pad_inches = 0)
                         
         else:
             image_label_overlay = label2rgb(segmentation_ws, image=img.astype('uint16'), 
@@ -165,8 +165,8 @@ def segmentation(img, local_maxi, labels, meta, directory, plot=True, save=False
             if save:
                     try:
                         filename = meta['Name']+'.tif'
-                        plt.savefig(directory+'/'+filename, transparent=True,bbox_inches='tight')
+                        plt.savefig(directory+'/'+filename, transparent=True,bbox_inches='tight',pad_inches = 0)
                     except IOError:
-                        plt.savefig(filename, transparent=True,bbox_inches='tight')
+                        plt.savefig(filename, transparent=True,bbox_inches='tight',pad_inches = 0)
 
     return(ganglion_prop)

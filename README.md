@@ -1,7 +1,7 @@
 # COUNTEN
 
 
-Interactive COUNTEN analysis in Google Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/pr4deepr/cellpose-colab/blob/main/Cellpose_cell_segmentation_2D_prediction_only.ipynb](https://colab.research.google.com/github/pr4deepr/COUNTEN/blob/master/COUNTEN.ipynb))
+Interactive COUNTEN analysis in Google Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pr4deepr/COUNTEN/blob/master/COUNTEN.ipynb)
 
 
 
